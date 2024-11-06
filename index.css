@@ -23,7 +23,7 @@ body{
     width: 50px;
     
 }
-.elsonap{
-    grid-column-start: 5;
+.naptar span:first-child{
+    grid-column: 5;
 }
 
