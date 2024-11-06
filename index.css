@@ -19,11 +19,12 @@ body{
     display: grid;  
     gap: 5px;
 }
-#gombok{
-    width: 50px;
-    
-}
-.elsonap{
+#elsonap{
     grid-column-start: 5;
 }
-
+ul{
+    list-style: none;
+}
+#utolsonap{
+    grid-column-end: auto;
+}
