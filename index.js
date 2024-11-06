@@ -15,15 +15,13 @@ const idő = [31,28,31,30,31,30,31,31,30,31,30,31];
 const napok = ["H","K","Sz","Cs","P","Sz","V"]
 for (let i = 1; i <31 ; i++){
     for (let j = 0; j<7 ; j++){
-        let nap = document.createElement("span");
-        var sor = document.createElement("div");
+        var nap = document.createElement("li");
         nap.innerText = i;
-        sor.appendChild(nap);
         if (i == 1){
             nap.id = "elsonap"
         }
     }
-    naptar.appendChild(sor);
+    naptar.appendChild(nap);
 
 }
 elozo.addEventListener("click", function(){
@@ -44,15 +42,13 @@ elozo.addEventListener("click", function(){
     }
     for (let i = 1; i <idő[honap-1]+1 ; i++){
         for (let j = 0; j<7 ; j++){
-            let nap = document.createElement("span");
-            var sor = document.createElement("div");
+            var nap = document.createElement("li");
             nap.innerText = i;
-            sor.appendChild(nap);
             if (i == 1){
                 nap.id = "elsonap"
             }
         }
-        naptar.appendChild(sor);
+        naptar.appendChild(nap);
     
     }
 
@@ -76,15 +72,13 @@ kovetkezo.addEventListener('click', function(){
     }
     for (let i = 1; i <idő[honap-1]+1 ; i++){
         for (let j = 0; j<7 ; j++){
-            let nap = document.createElement("span");
-            var sor = document.createElement("div");
+            var nap = document.createElement("li");
             nap.innerText = i;
-            sor.appendChild(nap);
             if (i == 1){
                 nap.id = "elsonap"
             }
         }
-        naptar.appendChild(sor);
+        naptar.appendChild(nap);
     
     }
 })

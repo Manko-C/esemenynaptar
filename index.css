@@ -18,12 +18,12 @@ body{
     grid-template-columns: repeat(7, 1fr);
     display: grid;  
     gap: 5px;
-}
-#gombok{
-    width: 50px;
-    
-}
-.naptar span:first-child{
     grid-column: 5;
+}
+#elsonap{
+    grid-column-start: 5;
+}
+ul{
+    list-style: none;
 }
 
