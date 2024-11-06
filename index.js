@@ -13,7 +13,7 @@ fejlec.appendChild(ido)
 fejlec.appendChild(kovetkezo)
 const idő = [31,28,31,30,31,30,31,31,30,31,30,31];
 const napok = ["H","K","Sz","Cs","P","Sz","V"]
-for (let i = 1; i <31 ; i++){
+for (let i = 1; i <idő[honap-1]+1 ; i++){
     for (let j = 0; j<7 ; j++){
         var nap = document.createElement("li");
         nap.innerText = i;
@@ -79,6 +79,8 @@ kovetkezo.addEventListener('click', function(){
             }
         }
         naptar.appendChild(nap);
+        
     
     }
+    
 })
